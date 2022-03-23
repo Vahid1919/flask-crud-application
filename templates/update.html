@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+
+{% block head %}
+
+
+{% endblock %}
+
+
+{% block body %}
+
+    <form action="/update/" method="POST">
+        <input type="text" name="new_content" value="{{previous_content}}">
+        <input type="hidden" name="id" value="{{id}}">
+        <input type="submit" value="UPDATE">
+    
+    </form>
+
+
+
+
+{% endblock %}
